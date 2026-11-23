@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "true-to-book"
+version = "0.1.0"
+description = "Check that AI-rendered video shots stay true to their book source, and rank the suspects for review."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["pillow>=10"]
+
+[project.optional-dependencies]
+ffmpeg = ["imageio-ffmpeg"]
+
+[project.scripts]
+true-to-book = "true_to_book.cli:main"
+
+[tool.setuptools]
+packages = ["true_to_book"]

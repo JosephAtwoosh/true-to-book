@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+# Reports and frame caches are per project, never committed
+qc/
+frames/
+*.mp4
+*.mov
